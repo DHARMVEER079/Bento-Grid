@@ -1,0 +1,341 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+    background-color: rgb(245,245,245);
+    font-size: 18px;
+}
+.social-media{
+    max-width: 316px;
+    min-height: 186px;
+    background-color: rgb(118,81,220);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    grid-column: 2/4;
+    grid-row: 1/6;
+}
+.social-media h1{
+    margin: 0;
+    line-height: 90%;
+    color: rgb(229,231,221);
+    font-weight: 500;
+}
+.social-media span{
+    color: rgb(255,209,109);
+}
+.social-media img{
+    display: block;
+    width: 120px;
+    padding-top: 15px;
+    margin-inline: auto;
+}
+.social-media p{
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 2%;
+    color: rgba(229, 231, 221, 0.808);
+}
+
+.manage{
+    max-width: 150px;
+    min-height: 144px;
+    background-color: rgb(255,255,255);
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 15px;
+    grid-row: 6/10;
+    grid-column: 2/3;
+}
+.manage img{
+    width: 180px;
+}
+.manage h4{
+    font-weight: 600;
+    line-height: .8;
+    letter-spacing: -0.8px;
+    margin-top: 5px;
+}
+.maintain{
+    max-width: 150px;
+    max-height: 150px;
+    background-color: rgb(255,204,105);
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 15px;
+    grid-row: 6/10;
+    grid-column: 3/4;
+}
+.maintain img{
+    width: 120px;
+    margin-top: 25px;
+}
+.maintain h4{
+    margin: 0;
+    line-height: .8;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+}
+
+.schedule{
+    max-width: 150px;
+    max-height: 350px;
+    background-color: rgb(220,209,252);
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 15px;
+    grid-column: 4/5;
+    grid-row: 1/11;
+}
+.schedule h4{
+    margin: 0;
+    line-height: .8;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+}
+.schedule img{
+    width: 210px;
+    margin-top: 15px;
+}
+.schedule p{
+    font-size: 12px;
+    font-weight: 500;
+   line-height: 1;
+   letter-spacing: -0.8px;
+}
+
+.grow{
+    max-width: 316px;
+    min-height: 142px;
+    background-color: rgb(118,81,220);
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    grid-column: 3/5;
+    grid-row: 10/14;
+}
+.grow img{
+    width: 132px;
+    display: inline-block;
+}
+.grow h3{
+  
+    display: inline-block;
+    color: rgb(229,231,221);
+    line-height: .9;
+    font-weight: 500;
+    letter-spacing: -0.8px;
+}
+.faster{
+    max-width: 150px;
+    min-height: 144px;
+    background-color: rgb(255,255,255);
+    border-radius: 5px;
+    padding: 15px;
+    grid-row: 10/14;
+    grid-column: 2/3;
+}
+.faster h1{
+    font-weight: 500;
+    margin: 0;
+}
+.faster p{
+    margin: 0;
+    font-size: 12px;
+   font-weight: 500;
+   letter-spacing: -0.8px;
+}
+.faster img{
+    width: 108px;
+    margin-top: 15px;
+}
+.create{
+    max-width: 150px;
+    max-height: 240px;
+    background-color: rgb(250,238,226);
+    padding: 15px;
+    border-radius: 5px;
+    grid-row: 1/7;
+    grid-column: 1/2;
+}
+.create h3{
+    line-height: .9;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+    font-size: 24px;
+
+}
+.create span{
+   color: rgb(118,81,220);
+}
+.create img{
+    width: 112px;
+}
+.write{
+    max-width: 150px;
+    min-height: 242px;
+    background-color: rgb(255,204,105);
+    padding: 15px;
+    border-radius: 5px;
+    grid-row: 7/14;
+    grid-column: 1/2;
+}
+.write h3{
+    line-height: .9;
+    font-weight: 600;
+    letter-spacing: -1px;
+    font-size: 24px;
+    margin: 0;
+}
+.write img{
+    width: 120px;
+    margin-top: 25px;
+}
+.main-container{
+    display: grid;
+    max-width: 656px;
+    min-height: 516px;
+    grid-template-rows: repeat(14,30px);
+    grid-template-columns: repeat(4,150px);
+    gap: 10px;
+    margin-inline: auto;
+    margin-top: 30px;   
+}
+
+@media (max-width:500px){
+    .main-container{
+        display: block;
+    }
+    .social-media,.manage,.maintain,.schedule,.grow,.faster,.create,.write{
+       margin-inline: auto;
+    }
+    .social-media{
+        min-width: 316px;
+        min-height: 200px;
+        font-size: 23px;
+        margin-top: 20px;
+    }
+    .social-media img{
+      
+            width: 180px;
+           
+        }
+    .social-media p{
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 2%;
+        color: rgba(229, 231, 221, 0.808);
+    }
+    .manage{
+        min-width: 316px;
+        min-height: 144px;
+        margin-top: 20px;
+    }
+    .manage img{
+        width: 280px;
+    }
+    .manage h4{
+        font-size: 22px;
+    }
+    .maintain{
+        min-width: 316px;
+        max-height: 220px;
+        margin-top: 20px;
+       
+    }
+    .maintain img{
+        min-width: 220px;
+        margin-top: 10px;
+    }
+    .maintain h4{
+        line-height: 1;
+       font-size: 22px;
+    }
+    .schedule{
+        min-width: 316px;
+        max-height: 350px;
+        text-align: center;
+        margin-top: 20px;
+       
+    }
+    .schedule h4{
+     font-size: 20px;
+    }
+    .schedule img{
+        width: 260px;
+        margin-top: 15px;
+        display: block;
+        margin-inline: auto;
+    }
+    .schedule p{
+        font-size: 14px;
+        max-width:240px ;
+        margin-inline: auto;
+    }
+
+    .grow{
+        min-width: 316px;
+        min-height: 142px;
+        display: block;
+        margin-inline:auto ;
+        text-align: center;
+        margin-top: 20px;
+     
+    }
+    .grow img{
+        min-width: 182px;
+        display: block;
+        margin-inline: auto;
+    }
+    .grow h3{
+        display: block;
+       min-width: 130px;
+    }
+    .faster{
+        min-width: 316px;
+        min-height: 184px;
+        margin-top: 20px;
+    }
+    .faster h1{
+        font-weight: 500;
+        margin: 0;
+    }
+    .faster p{
+        margin:initial;
+        font-size: 16px;
+    }
+    .faster img{
+        min-width: 148px;
+        margin-top: 20px;
+    }
+    .create{
+        min-width: 316px;
+        min-height: 200px;
+        margin-top: 20px;
+    }
+    .create h3{
+        font-size: 24px;
+    }
+    .create img{
+        min-width: 152px;
+    }
+    .write{
+        min-width: 316px;
+        min-height: 242px;
+        margin-top: 20px;
+    }
+    .write h3{
+        font-size: 28px; 
+    }
+    .write img{
+        min-width: 180px;
+        margin-top: 25px;
+    }
+
+    .main-container{
+        margin-bottom: 20px;
+    }
+
+}
